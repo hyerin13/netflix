@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>NETFLIX</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="Hyerin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!--브라우저 css 초기화(초기화 css가 위에 있어야함)-->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    <!--구글 웹폰트 링크
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">-->
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <section class="home_hero">
+        <div class="hero_container">
+            <header class="home_header">
+                <img src="img/netflixlogo.png" id="logo">
+            </header>
+
+            <div class="login_container_sub">
+                <div class="login_container">
+                    <form action="join.php" class="login">
+                        <h1>로그인</h1>
+
+                        <input type="email" id="e_mail" name="email" placeholder="이메일 주소 또는 전화번호"></input>
+                        <input type="password" id="pw" name="pw" placeholder="비밀번호"></input>
+                        <button type="submit" id="login_button">
+                            <h3>로그인</h3>
+                        </button>
+                        
+                        <div class="login_bottom">
+                            <div>
+                                <input type="checkbox">
+                                <p>로그인 정보 저장</p>
+                            </div>
+                            <p>도움이 필요하신가요?</p>
+                        </div>
+                    </form>
+
+                    <div class="facebook">
+                        <img src="img/login/FB-f-Logo__blue_57.png">
+                        Facebook으로 로그인
+                    </div>
+
+                    <div class="bottom">
+                        <h3>Netflix 회원이 아닌가요? <a>지금 가입하세요.</a></h3>
+                        <p>이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다. <span>자세히 알아보기</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer_container">
+                    <p>질문이 있으신가요? 고객 센터에 문의하세요.</p>
+                    <ul>
+                        <li>기프트카드 약관</li>
+                        <li>이용 약관</li>
+                        <li>개인정보 처리방침</li>
+                    </ul>
+                    <div class="footer_select_container">
+                        <select class="footer_select" onchange="window.open(options[selectedIndex].value);">
+                            <option selected value="https://netflix.com/kr" data-language="ko" data-country="KR">한국어 &#9660</option>
+                            <option value="https://netflix.com/kr-en" data-language="en" data-country="KR">English &#9660</option>
+                        </select>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
