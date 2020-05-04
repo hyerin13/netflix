@@ -1,0 +1,911 @@
+/*font*/
+@font-face {
+    font-family:Netflix_Sans_Bd;
+    src:url(../font/NetflixSans_W_Bd.woff2);
+}
+@font-face {
+    font-family: Netflix_Sans_Blk;
+    src:url(../font/NetflixSans_W_Blk.woff2);
+}
+@font-face {
+    font-family: Netflix_Sans_Lt;
+    src:url(../font/NetflixSans_W_Lt.woff2);
+}
+@font-face {
+    font-family: Netflix_Sans_Md;
+    src:url(../font/NetflixSans_W_Md.woff2);
+}
+@font-face {
+    font-family: Netflix_Sans_Rg;
+    src:url(../font/NetflixSans_W_Rg.woff2);
+}
+@font-face {
+    font-family: Netflix_Sans_Th;
+    src:url(../font/NetflixSans_W_Th.woff2);
+}
+
+.text_align_center {
+    text-align:center;
+}
+h1 {
+    font-family: Netflix_Sans_Rg;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+}
+h2 {
+    font-family: Netflix_Sans_Rg;
+    font-size:26px;
+    font-weight:400px;
+    line-height:normal;
+}
+h3 {
+    font-family: Netflix_Sans_Rg;
+    font-size: 19.2px;
+    font-weight: 200px;
+    line-height: normal;
+}
+
+/*color*/
+.color_white {
+    color:white;
+}
+
+/*header*/
+.home_header {
+    width:100%;
+    height:80px;
+    padding-top:20px;
+    margin:0 auto;
+    display:block;
+    align-items:center;
+    position:absolute;
+}
+.home_header_container {
+    margin:0 56px;
+    display:flex;
+    justify-content:space-between;
+}
+#logo {
+    width:167px;
+    height:45px;
+    margin-top:8px;
+}
+.home_header button {
+    background-color:#e50914;
+    text-align:center;
+    line-height:36px;
+    border-radius:4px;
+    font-size:16px;
+    padding:7px 17px;
+    margin-top:8px;
+}
+
+/*home_hero*/
+body {
+    color:white;
+    background-color:black;
+    word-break:keep-all;
+}
+.home_hero {
+    width:100%;
+    height:90vh;
+    background-image:url('../img/KR-ko-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size:cover;
+    background-position:center;
+    border-bottom:8px solid #212121;
+}
+.hero_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    padding:145px 45px;
+}
+.hero_container h2 {
+    margin:16px auto;
+}
+.form_email_container {
+    display:flex;
+    flex-direction:column;
+}
+.form_email {
+    width:760px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
+}
+    .form_email input {
+        width:500px;
+        height:70px;
+        background-color:white;
+        color:rgb(140,140,140);
+        line-height:70px;
+        padding:0 10px;
+        font-size:16px;
+        border-radius:2px 0 0 2px;
+    }
+    .form_email button {
+        width:260px;
+        height:70px;
+        background-color:#e50914;
+        text-align:center;
+        border-radius:0 2px 2px 0;
+    }
+    .form_email h3 {
+        line-height:70px;
+    }
+    .form_email_p {
+        width:100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size:19.2px;
+    }
+
+/*tv*/
+/*
+.tv {
+    width:100%;
+    height:493.92px;
+    display:block;
+    padding:70px 45px;
+    border-bottom:8px solid #212121;
+}
+.tv_container {
+    max-width:1100px;
+    height:493.92px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+}
+.tv_left {
+    width:52%;
+    height:493.92px;
+    padding-right:48px;
+}
+.tv_left h1 {
+    margin:0 0 8px;
+}
+.tv_left h2 {
+    margin:19.5px 0 6.5px;
+}
+
+.tv_right {
+    width:48%;
+    height:493.92px;
+    position:relative;
+    display:flex;
+    overflow:hidden;
+    margin:-10% -5% 0 -5%;
+}
+    .tv_right_img {
+        max-width:100%;
+        z-index:2;
+        display:block;
+    }
+    .tv_right_video {
+        max-width:73%;
+        max-height:54%;
+        top:20%;
+        left:13.8%;
+        display:inline-block;
+        position:absolute;
+    }
+*/
+.tv {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+    word-break:keep-all;
+}
+.tv_container {
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.tv_left {
+    width: 52%;
+    height: 100%;
+    padding-right:48px;
+}
+    .tv_left h1 {
+        font-size:50px;
+        margin-bottom: 20px;
+    }
+    .tv_left h2 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+.tv_right {
+    width: 48%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+    .tv_right_img {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    .tv_right_video_container {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 73%;
+        max-height: 54%;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .tv_right_video {
+        width: 100%;
+        height: 100%;
+    }
+
+/*interest*/
+.interest {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+    word-break:keep-all;
+}
+.interest_container {
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.interest_left {
+    width: 48%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+    .interest_left_img {
+        max-width: 100%;
+        position: relative;
+    }
+    .interest_left_card {
+        width:60%;
+        height:84px;
+        min-width:240px;
+        display:flex;
+        align-items:center;
+        position:absolute;
+        z-index:5;
+        left:50%;
+        bottom:8%;
+        margin:0 auto;
+        padding:8px 12px 8px 12px;
+        background-color:black;
+        border:2px solid rgba(255, 255, 255, 0.25);
+        border-radius:12px;
+        transform:translateX(-50%);
+        font-size:16px;
+        color:white;
+        justify-content:space-between;
+    }
+        .interest_left_card_poster {
+            max-width:100%;
+            height:72px;
+            margin-right:16px;
+            display:block;
+        }
+        .interest_left_card_text {
+            display:block;
+            margin:4.8px 0;
+        }
+            .text_1 {
+                display:block;
+                color:white;
+                font-size:16px;
+                font-weight:600;
+                line-height:21px;
+            }
+            .text_2 {
+                display:block;
+                color:rgb(0, 113, 235);
+                font-size:14.4px;
+                font-weight:400;
+                line-height:19px;
+            }
+        .interest_left_card_gif {
+            width:48px;
+            display:block;
+        }
+.interest_right {
+    width: 52%;
+    height: 100%;
+    padding-left:48px;
+}
+    .interest_right h1 {
+        font-size:50px;
+        margin-bottom: 20px;
+    }
+    .interest_right h2 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+/*device*/
+.device {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+    word-break:keep-all;
+}
+.device_container {
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.device_left {
+    width: 52%;
+    height: 100%;
+    padding-right:48px;
+}
+    .device_left h1 {
+        font-size:50px;
+        margin-bottom: 20px;
+    }
+    .device_left h2 {
+        font-size:26px;
+        line-height: 1.4;
+    }
+.device_right {
+    width: 48%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+    .device_right_img {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    .device_right_video_container {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 63%;
+        max-height: 47%;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .device_right_video {
+        width: 100%;
+        height: 100%;
+    }
+
+/*faq*/
+.faq {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+    word-break:keep-all;
+}
+.faq_container {
+    max-width: 1100px;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+.faq h1 {
+    font-size:50px;
+    text-align:center;
+    margin-bottom:8px;
+}
+.faq_button {
+    width:75%;
+    display:block;
+    max-width:815px;
+    margin:52px auto;
+    color:white;
+    font-family: Netflix_Sans_Rg;
+    font-weight:200;
+}
+.faq_button_li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.faq_accordion {
+    width:100%;
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20.8px 31.2px;
+    font-size: 26px;
+    align-items: center;
+    line-height:normal;
+    margin-bottom:1px
+}
+.faq_accordion::after {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icon_plus.svg);
+    content: '';
+    transition: transform 0.2s;
+}
+.icon_plus {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s;
+}
+.active::after {
+    transform: rotate(45deg);
+}
+.faq_panel {
+    width:100%;
+    max-height:1200px;
+    padding:31.2px;
+    box-sizing: border-box;
+    background-color: #303030;
+    font-size: 26px;
+    line-height:normal;
+    display: none;
+    overflow: hidden;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 70px 45px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer_container {
+    width:100%;
+    min-width:190px;
+    padding-bottom:20px;
+    margin:0 auto;
+    font-family: Netflix_Sans_Rg;
+    font-weight:400;
+    color:rgb(117, 117, 117);
+}
+.cs {
+    margin-bottom:30px;
+    font-size:16px;
+}
+.footer_container ul {
+    max-width:1000px;
+    display:block;
+    box-sizing:border-box;
+}
+.footer_container li {
+    width:24.6%;
+    min-width:100px;
+    font-size:13px;
+    margin-bottom:16px;
+    padding-right:12px;
+    display:inline-block;
+    box-sizing:border-box;
+}
+.footer_select_container {
+    margin-top:20px;
+}
+.footer_select {
+    border:1px solid rgb(51, 51, 51);
+    border-radius:2px;
+    color:rgb(153, 153, 153);
+    font-size:16px;
+    line-height:27.2px;
+    align-items:center;
+    padding:12px 35px;
+}
+.country {
+    font-size:13px;
+    margin:24px 0 13px 0;
+}
+.copyright {
+    margin:20px 0;
+    color:rgb(128, 128, 128);
+    font-size:12px;
+    line-height:normal;
+}
+
+@media screen and (max-width:949px) {
+    /*header*/
+    .home_header {
+        height:45px;
+    }
+    .home_header_container {
+        margin:0 45px;
+    }
+    #logo {
+        width:108px;
+        height:32px;
+    }
+
+    /*main (home_hero)*/
+    .home_hero {
+        height:auto;
+    }
+    .hero_container h1 {
+        font-size: 50px;
+    }
+    .form_email_container {
+        flex-direction: column-reverse;
+    }
+    .form_email {
+        flex-direction: column;
+        height: auto;
+    }
+    .form_email input {
+        margin-bottom: 20px;
+        border-radius: 2px;
+        height: 60px;
+    }
+    .form_email button {
+        border-radius: 2px;
+        width: 150.328px;
+        height: 44px;
+        margin-top:8px;
+    }
+    .form_email h3 {
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .form_email_p {
+        font-size: 23px;
+    }
+
+    /*tv*/
+    .tv_container {
+        flex-direction: column;
+    }
+    .tv_left {
+        width:100%;
+        text-align: center;
+        padding:0;
+    }
+    .tv_left h1 {
+        font-size: 40px;
+    }
+    .tv_left h2 {
+        font-size: 20px;
+    }
+    .tv_right {
+        width: 72%;
+    }
+
+    /*interest*/
+    .interest_container {
+        flex-direction: column-reverse;
+    }
+    .interest_left {
+        width: 72%;
+    }
+    .interest_left_card {
+        padding: 5.6px 12px 5.6px 12px;
+    }
+    .interest_left_card_poster {
+        height:64px;
+    }
+    .interest_left_card_text {
+        width:250px;
+    }
+    .interest_right {
+        width: 100%;
+        text-align: center;
+        padding:0;
+    }
+    .interest_right h1 {
+        font-size: 40px;
+    }
+    .interest_right h2 {
+        font-size: 20px;
+    }
+    .interest_right span {
+
+    }
+
+    /*device*/
+    .device_container {
+        flex-direction: column;
+    }
+    .device_left {
+        width:100%;
+        text-align: center;
+        padding:0;
+    }
+    .device_left h1 {
+        font-size: 40px;
+    }
+    .device_left h2 {
+        font-size: 20px;
+    }
+    .device_right {
+        width: 72%;
+    }
+
+    /*faq*/
+    .faq_container {
+        margin: 0;
+    }
+    .faq h1 {
+        font-size:40px;
+    }
+    .faq_button {
+        width:90%;
+        margin:30px auto;
+    }
+    .faq_accordion {
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+    .faq_panel {
+        padding:24px;
+        font-size: 20px;
+    }
+    .form_email {
+        width:100%;
+        padding:0 5%;
+    }
+        .form_email input {
+            width:100%;
+            height:48px;
+            margin:0 0 10px 0;
+            font-size:18px;
+        }
+
+    /*footer*/
+    .footer {
+        padding: 70px 45px 0 45px;
+    }
+
+    .footer_container {
+        width: 100%;
+    }
+
+    .footer_container li {
+        width: 24%;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+
+}
+
+@media screen and (max-width:549px) {
+    /*header*/
+    .home_header {
+        height:45px;
+    }
+    .home_header_container {
+        margin:0 5%;
+    }
+    #logo {
+        width:95px;
+        height:24px;
+    }
+    .home_header_container button {
+        font-size:14.4px;
+        padding:4px 8px;
+        line-height:normal;
+    }
+
+    /*main (home_hero)*/
+    .home_hero {
+        height:auto;
+    }
+    .hero_container {
+        padding:145px 45px 70px 45px;
+    }
+    .hero_container h1 {
+        font-size:32px;
+    }
+    .hero_container h2 {
+        font-size:18px;
+        font-weight:200;
+    }
+    .form_email {
+        flex-direction: column;
+        height: auto;
+    }
+    .form_email input {
+        margin:0 0 10px 0;
+        height: 48px;
+        font-size:16px;
+    }
+    .form_email_p {
+        font-size:18px;
+        font-weight:200;
+    }
+
+    /*tv*/
+    .tv {
+        padding:50px 5%;
+    }
+    .tv_left h1 {
+        font-size: 26px;
+        margin-bottom:8px;
+    }
+    .tv_left h2 {
+        font-size:18px;
+        margin:13.5px 0 4.5px 0;
+    }
+    .tv_right {
+        width:100%;
+    }
+
+    /*interest*/
+    .interest {
+        padding:50px 5%;
+    }
+    .interest_left {
+        width:100%;
+    }
+    .interest_right h1 {
+        font-size: 26px;
+        margin-bottom:8px;
+    }
+    .interest_right h2 {
+        font-size:18px;
+        margin:13.5px 0 4.5px 0;
+    }
+
+    /*device*/
+    .device {
+        padding:50px 5%;
+    }
+    .device_left h1 {
+        font-size: 26px;
+        margin-bottom:8px;
+    }
+    .device_left h2 {
+        font-size:18px;
+        margin:13.5px 0 4.5px 0;
+    }
+    .device_right {
+        width:100%;
+    }
+
+    /*faq*/
+    .faq {
+        padding:50px 0;
+    }
+    .faq h1 {
+        font-size:26px;
+        margin-bottom:8px;
+        padding:0 5%;
+    }
+    .faq_button {
+        width:100%;
+        margin:22.5px 0;
+    }
+    .faq_accordion {
+        padding:14.4px 21.6px;
+        font-size: 18px;
+    }
+    .faq_panel {
+        padding:21.6px;
+        font-size: 18px;
+    }
+    .form_email {
+        width:100%;
+        padding:0 5%;
+    }
+        .form_email input {
+            width:100%;
+            height:48px;
+            margin:0 0 10px 0;
+            font-size:18px;
+        }
+        .form_email button {
+            width:150px;
+            height:44px;
+        }
+        .form_email h3 {
+            font-size:16px;
+        }
+        .form_email_p {
+            font-size:18px;
+        }
+
+        /*footer*/
+        .footer {
+            padding:50px 5% 0 5%;
+        }
+        .footer_container {
+            width:90%;
+            margin:0 auto;
+        }
+        .footer_container li {
+            width:32.5%;
+        }
+}
+
+@media screen and (max-width:500px) {
+    /*main (home_hero)*/
+    .hero_container {
+        padding: 125px 5% 50px 5%;
+    }
+    .hero_container h1 {
+        text-align:center;
+    }
+    .hero_container h2 {
+        text-align: center;
+    }
+    .form_email_p {
+        text-align:center;
+    }
+    .form_email input {
+        width:100%;
+        font-size:16px;
+    }
+
+    /*interest*/
+    .interest_left_card_poster {
+        height: 48px;
+    }
+    .interest_left_card {
+        height:60px;
+    }
+    .footer_container li {
+        width:49%;
+    }
+
+    /*faq*/
+    .faq_accordion {
+        font-size:15px;
+    }
+    .faq_panel {
+        font-size:15px;
+    }
+    .form_email_p {
+        padding:0 5%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    /*main (home_hero)*/
+    .hero_container span {
+        display:block;
+    }
+
+    /*interest*/
+    .text_1 {
+        font-size:14px;
+    }
+    .text_2 {
+        font-size:14px;
+    }
+}
